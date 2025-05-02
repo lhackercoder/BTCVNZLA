@@ -9,6 +9,37 @@
   }
 }
 
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Animación de movimiento horizontal */
+@keyframes move {
+    0% {
+        left: -10%;
+    }
+    100% {
+        left: 110%;
+    }
+}
+
 :root {
     --color1: #112b50; /* Azul oscuro */
     --color2: #145d88; /* Azul intermedio */
@@ -362,6 +393,42 @@ li{
 #tokenomic .grafico{
 	position: relative;
 	top: -250px;
+}
+
+/* Contenedor de las monedas */
+#crypto-animations {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+/* Estilo para cada moneda */
+.crypto-animation {
+    position: absolute;
+    font-size: 50px;
+    color: #f6ce39; /* Color dorado */
+    animation: float 3s ease-in-out infinite, move 5s linear infinite;
+}
+
+/* Colores específicos para cada moneda */
+.crypto-animation:nth-child(1) {
+    color: #f7931a; /* Bitcoin */
+    top: 20px;
+    animation-delay: 0s;
+}
+
+.crypto-animation:nth-child(2) {
+    color: #627eea; /* Ethereum */
+    top: 60px;
+    animation-delay: 1s;
+}
+
+.crypto-animation:nth-child(3) {
+    color: #ff6600; /* Monero (naranja brillante) */
+    top: 100px;
+    animation-delay: 2s;
 }
 
 /*  roadmap investment  */
