@@ -1,0 +1,104 @@
+/* Estilo general para la barra de navegación */
+header nav {
+    background-color: #112b50; /* Color de fondo */
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white; /* Color del texto */
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #f99523; /* Color al pasar el mouse */
+    transform: scale(1.1); /* Efecto de agrandamiento */
+}
+
+/* Estilo para la sección "Acerca" */
+#about {
+    padding: 40px 20px;
+    background-color: #f4f4f4; /* Fondo gris claro */
+    text-align: center;
+}
+
+#about h1 {
+    color: #112b50; /* Azul oscuro */
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#about p {
+    color: #333; /* Texto gris oscuro */
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* Estilo para la sección "Proyectos" */
+#projects {
+    padding: 40px 20px;
+    background-color: #ffffff; /* Fondo blanco */
+}
+
+#projects h2 {
+    color: #112b50; /* Azul oscuro */
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#projects article {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ddd; /* Borde gris claro */
+    border-radius: 10px;
+    background-color: #f9f9f9; /* Fondo gris claro */
+}
+
+#projects article h3 {
+    color: #112b50; /* Azul oscuro */
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+#projects article p {
+    color: #555; /* Texto gris medio */
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Estilo para la sección "Contacto" */
+#contact {
+    padding: 40px 20px;
+    background-color: #112b50; /* Azul oscuro */
+    color: white;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
