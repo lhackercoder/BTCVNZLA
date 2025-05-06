@@ -9,7 +9,7 @@ const myChart = new Chart(ctx, {
                 'rgba(17, 43, 80, 1)',  // Venta al público
                 'rgba(20, 93, 136, 1)', // Reserva
                 'rgba(246, 206, 57, 1)', // Equipo
-                'rgba(249, 149, 35, 1)'  // Socios estratégicos
+                'rgb(31, 6, 146)'  // Socios estratégicos
             ],
             borderColor: [
                 'rgba(255, 255, 255, 1)',
