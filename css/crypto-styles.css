@@ -1,0 +1,21 @@
+/* Crypto Icons CSS */
+
+.crypto-icon {
+    font-size: 24px;
+    margin: 0 15px;
+    color: #333;
+    animation: float 3s infinite ease-in-out;
+    display: inline-block;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
